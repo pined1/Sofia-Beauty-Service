@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofia Cruz - Beauty Services</title>
+    <title>Sofia Cruz - Mobile Beauty Services</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -263,6 +263,18 @@
             opacity: 0.8;
         }
 
+        /* Image styles for portfolio */
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.1);
+        }
+
         .portfolio-label {
             position: absolute;
             bottom: 0;
@@ -512,7 +524,7 @@
             <p class="mission">"Bringing spa-quality beauty services to the comfort of your home"</p>
         </div>
         <div class="scroll-arrow" onclick="document.querySelector('.services').scrollIntoView({behavior: 'smooth'})">
-            <i class="fas fa-chevron-down"></i>
+            ↓
         </div>
     </section>
 
@@ -559,20 +571,33 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <i class="portfolio-placeholder fas fa-camera"></i>
+                <!-- Replace the placeholder with your actual image -->
+                <img src="assets/gel-manicure-1.jpg" alt="Gel Manicure" class="portfolio-image">
                 <div class="portfolio-label">Gel Manicure</div>
             </div>
             <div class="portfolio-item">
-                <i class="portfolio-placeholder fas fa-camera"></i>
+                <!-- Replace with your pedicure image -->
+                <img src="assets/pedicure-design-1.jpg" alt="Pedicure Design" class="portfolio-image">
                 <div class="portfolio-label">Pedicure Design</div>
             </div>
             <div class="portfolio-item">
-                <i class="portfolio-placeholder fas fa-camera"></i>
+                <!-- Replace with your brow lamination image -->
+                <img src="assets/brow-lamination-1.jpg" alt="Brow Lamination" class="portfolio-image">
                 <div class="portfolio-label">Brow Lamination</div>
             </div>
             <div class="portfolio-item">
-                <i class="portfolio-placeholder fas fa-camera"></i>
+                <!-- Replace with your lash lift image -->
+                <img src="assets/lash-lift-1.jpg" alt="Lash Lift" class="portfolio-image">
                 <div class="portfolio-label">Lash Lift</div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+            <div class="portfolio-item">
+                <img src="assets/nail-art-1.jpg" alt="Nail Art Design" class="portfolio-image">
+                <div class="portfolio-label">Nail Art Design</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/french-manicure-1.jpg" alt="French Manicure" class="portfolio-image">
+                <div class="portfolio-label">French Manicure</div>
             </div>
         </div>
     </section>
@@ -641,11 +666,11 @@
     <!-- Sticky Bottom Bar -->
     <div class="sticky-bottom" id="stickyBar">
         <a href="sms:+1234567890?body=Hi Sofia! I'd like to book an appointment." class="sticky-btn">
-            <i class="fas fa-sms"></i>
+            📱
             Book Now
         </a>
         <a href="https://instagram.com/sofiacruz" target="_blank" class="sticky-btn">
-            <i class="fab fa-instagram"></i>
+            📸
             Instagram
         </a>
     </div>
